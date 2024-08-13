@@ -3,15 +3,16 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
-import logo from '@/assets/logo-white.png';
-import defaultProfile from '@/assets/profile.png';
+import logo from '@/assets/images/logo-white.png';
+import defaultProfile from '@/assets/images/profile.png';
 import { FaGoogle } from 'react-icons/fa';
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMoblieMenuOpen] = useState(false);
   const [isProfileDropdownOpen, setIsProfieDropdownOpen] = useState(false);
-  const [isLoggedIn, setIsLoggedIn] = useState(true);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   const pathname = usePathname();
+
   return (
     <nav className='bg-blue-700 border-b border-blue-500'>
       <div className='mx-auto max-w-7xl px-2 sm:px-6 lg:px-8'>
