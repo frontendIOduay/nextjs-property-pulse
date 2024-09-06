@@ -11,7 +11,7 @@ const PropertyCard = ({ property }) => {
   const getRateDisplay = () => {
     const { rates } = property;
 
-    //Check if rentlas have monthly/weekly/nightly payment
+    //Check if rentlas have monthly/weekly/nightly
     if (rates.monthly) {
       return `${rates.monthly.toLocaleString()}/mo`;
     } else if (rates.weekly) {
